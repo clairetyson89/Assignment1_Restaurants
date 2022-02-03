@@ -4,8 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Restaurant": "Anthonino's Taverna",
-        "Rating": 4
+        "Restaurant": "Anthonino's Taverna"
       },
       "geometry": {
         "type": "Point",
@@ -18,8 +17,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Restaurant": "River Des Peres Yacht Club",
-        "Rating": 2
+        "Restaurant": "River Des Peres Yacht Club"
       },
       "geometry": {
         "type": "Point",
@@ -32,8 +30,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Restaurant": "Yellowbelly",
-        "Rating": 5
+        "Restaurant": "Yellowbelly"
       },
       "geometry": {
         "type": "Point",
@@ -46,8 +43,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Restaurant": "Eleven Eleven Mississippi",
-        "Rating": 3
+        "Restaurant": "Eleven Eleven Mississippi"
       },
       "geometry": {
         "type": "Point",
@@ -60,8 +56,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Restaurant": "Salvage Yard",
-        "Rating": 1
+        "Restaurant": "Salvage Yard"
       },
       "geometry": {
         "type": "Point",
