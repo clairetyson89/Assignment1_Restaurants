@@ -1,5 +1,7 @@
-var map = L.map('mapID').setView([38.5677357287667, -90.26065855130673], 11.5);
-L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ext}', {
+var map = L.map('map').setView([38.62936606062699, -90.25318557158936], 12);
+
+  // load a tile layer
+ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ext}', {
 	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 	subdomains: 'abcd',
 	minZoom: 0,
@@ -7,28 +9,93 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ext
 	ext: 'png'
 }).addTo(map);
 
-//adding in markers and popups
-var marker1 = L.marker([38.61646906937522, -90.2781275757272]).addTo(map);
-//Anthonino's Taverna
-marker1.bindPopup("<b>Anthonino's Taverna</b><br>Easygoing eatery whipping up hearty plates of Italian & Greek fare, including toasted ravioli.").openPopup();
+$.get.GeoJSON(https://github.com/clairetyson89/Assignment1_Restaurants/blob/main/points.geojson)
+	      L.GeoJSON(data, {
+onEachFeature: function(feature, layer) {
+	layer.bindPopup(<h2>+feature.properties.Restaurant+</h2>);
+			}
+			}).addTo(map);
+});
 
-var marker2 = L.marker([38.54928222827671, -90.26363784258069]).addTo(map);
-//River Des Peres Yacht Club
-marker2.bindPopup("<b>River Des Peres Yacht Club Deli</b><br>A sandwich shop by River Des Peres.").openPopup();
+var geojsonFeature = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Restaurant Name": "Schlafly Taproom",
+        "Rating": "4 stars",
+        "popupContent": "Schlafly Taproom: 4 Stars"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.20967364311218,
+          38.63298046090374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Restaurant Name": "White Knight Diner",
+        "Rating": "3.5 stars",
+        "popupContent": "White Knight: 3.5 Stars"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.20578980445862,
+          38.63158920958141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Restaurant Name": "Eleven Eleven MS",
+        "Rating": "4.5 stars",
+        "popupContent": "Eleven Eleven Mississippi: 4.5 Stars"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.21318197250366,
+          38.61951939049486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Restaurant Name": "Uncle Bill's",
+        "Rating": "3 stars",
+        "popupContent": "Uncle Bill's Pancakes: 3 Stars"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.27109622955322,
+          38.596866234005105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Restaurant Name": "Stella Blues",
+        "Rating": "5 stars",
+        "popupContent": "Stella Blue's: 5 Stars"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.26219129562378,
+          38.59881156734197
+        ]
+      }
+    }
+  ]
+};
 
-var marker3 = L.marker([38.645748626283016, -90.26140420598709]).addTo(map);
-//Yellowbelly
-marker3.bindPopup("<b>Yellowbelly</b><br>Celebrated bistro for Californian cuisine with a wine emphasis in a stylish renovated-factory space.").openPopup();
-
-var marker4 = L.marker([38.62033846450811, -90.21282969602044]).addTo(map);
-//Eleven Eleven Mississippi
-marker4.bindPopup("<b>Eleven Eleven Mississippi</b><br>Celebrated bistro for Californian cuisine with a wine emphasis in a stylish renovated-factory space.").openPopup();
-
-var marker5 = L.marker([38.583151637826184, -90.29319087625662]).addTo(map);
-//Salvage Yard Bar and Grill
-marker5.bindPopup("<b>Salvage Yard Bar and Grill</b><br>Spartan counter-serve nook with a menu of St. Louis- & Chicago-style pies, plus sandwiches & sides.").openPopup();
-
-
-
-
-
+var feat = L.geoJSON(geojsonFeature).addTo(map);
