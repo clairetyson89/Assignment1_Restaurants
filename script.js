@@ -9,12 +9,6 @@ var map = L.map('map').setView([38.62936606062699, -90.25318557158936], 12);
 	ext: 'png'
 }).addTo(map);
 
-$.get.GeoJSON(https://github.com/clairetyson89/Assignment1_Restaurants/blob/main/points.geojson)
-	      L.GeoJSON(data, {
-onEachFeature: function(feature, layer) {
-	layer.bindPopup(<h2>+feature.properties.Restaurant+</h2>);
-			}
-			}).addTo(map);
+$.getJSON("https://github.com/clairetyson89/Assignment1_Restaurants/blob/main/points.geojson",function(data){
+L.geoJson(data).addTo(map);
 });
-
-var feat = L.geoJSON(geojsonFeature).addTo(map);
