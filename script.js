@@ -10,11 +10,9 @@ var map = L.map('map').setView([38.62936606062699, -90.25318557158936], 12);
 }).addTo(map);
 
 $.getJSON("https://raw.githubusercontent.com/clairetyson89/Assignment1_Restaurants/main/points.geojson",function(data){ 
-L.geoJson(data,{
-      pointToLayer: function(feature,latlng){
-        var marker = L.marker(latlng);
-        marker.bindPopup(feature.properties.Restaurants + '<br/>' +'<br/>' + feature.properties.Address + '<br/>' + feature.properties.City);
-        return marker;  
-}
-}).addTo(map);
-});
+    L.geoJSON(data, {
+  	onEachFeature: function (feature, layer) {
+    		layer.bindPopup('<p>'+feature.properties.Restaurant+'</p>');
+  		}
+	}).addTo(map);
+ });
