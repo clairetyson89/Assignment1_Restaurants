@@ -11,7 +11,7 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ext
  $.getJSON("https://raw.githubusercontent.com/clairetyson89/Assignment1_Restaurants/main/restaurants.geojson",function(data){
     L.geoJSON(data, {
   	onEachFeature: function (feature, layer) {
-    		layer.bindPopup('<h3>'+feature.properties.Restaurant+'</h3>');
+    		layer.bindPopup('<p>'+feature.properties.Restaurant+'</p>');
   		}
 	}).addTo(map);
  });
