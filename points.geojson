@@ -4,75 +4,70 @@
     {
       "type": "Feature",
       "properties": {
-        "Restaurant Name": "Schlafly Taproom",
-        "Rating": "4 stars",
-        "popupContent": "Schlafly Taproom: 4 Stars"
+        "Restaurant": "Anthonino's Taverna",
+        "Rating": 4
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -90.20967364311218,
-          38.63298046090374
+          -90.27789831161499,
+          38.61428850465383
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Restaurant Name": "White Knight Diner",
-        "Rating": "3.5 stars",
-        "popupContent": "White Knight: 3.5 Stars"
+        "Restaurant": "River Des Peres Yacht Club",
+        "Rating": 2
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -90.20578980445862,
-          38.63158920958141
+          -90.26463747024536,
+          38.548333239992715
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Restaurant Name": "Eleven Eleven MS",
-        "Rating": "4.5 stars",
-        "popupContent": "Eleven Eleven Mississippi: 4.5 Stars"
+        "Restaurant": "Yellowbelly",
+        "Rating": 5
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -90.21318197250366,
-          38.61951939049486
+          -90.2615475654602,
+          38.64339722573303
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Restaurant Name": "Uncle Bill's",
-        "Rating": "3 stars",
-        "popupContent": "Uncle Bill's Pancakes: 3 Stars"
+        "Restaurant": "Eleven Eleven Mississippi",
+        "Rating": 3
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -90.27109622955322,
-          38.596866234005105
+          -90.21321415901184,
+          38.61964512824784
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "Restaurant Name": "Stella Blues",
-        "Rating": "5 stars",
-        "popupContent": "Stella Blue's: 5 Stars"
+        "Restaurant": "Salvage Yard",
+        "Rating": 1
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -90.26219129562378,
-          38.59881156734197
+          -90.29285430908202,
+          38.581922303903156
         ]
       }
     }
