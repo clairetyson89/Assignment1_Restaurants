@@ -9,9 +9,6 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ext
 }).addTo(map);
 
  $.getJSON("https://https://raw.githubusercontent.com/clairetyson89/Assignment1_Restaurants/main/points.geojson",function(data){
-    L.geoJSON(data, {
-  	onEachFeature: function (feature, layer) {
-    		layer.bindPopup('<h3>'+feature.properties.Restaurant+'</h3>');
-  		}
+    L.geoJSON
 	}).addTo(map);
  });
