@@ -9,6 +9,6 @@ var map = L.map('map').setView([38.62936606062699, -90.25318557158936], 12);
 	ext: 'png'
 }).addTo(map);
 
-$.getJSON("https://github.com/clairetyson89/Assignment1_Restaurants/blob/main/points.geojson",function(data){
+$.getJSON("https://raw.githubusercontent.com/clairetyson89/Assignment1_Restaurants/main/points.geojson",function(data){
 L.geoJson(data).addTo(map);
 });
